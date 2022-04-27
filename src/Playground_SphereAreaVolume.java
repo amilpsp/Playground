@@ -17,10 +17,10 @@ public class Playground_SphereAreaVolume {
 
         CustomClass_Sphere globe = new CustomClass_Sphere(radius);
 
-        int areaRounded = (int)globe.computeArea();
-        int volumeRounded = (int)globe.computeVolume();
+        int areaRounded = (int)globe.computeAreaRounded();
+        int volumeRounded = (int)globe.computeVolumeRounded();
 
-        System.out.println("klotets area är: " + areaRounded );
-        System.out.println("Klotets volym är: " + volumeRounded );
+        System.out.println("klotets avrundat area är: " + areaRounded );
+        System.out.println("Klotets avrundat volym är: " + volumeRounded );
     }
 }

@@ -6,13 +6,13 @@ public class CustomClass_Sphere {
         r = radius;
     }
 
-    public double computeArea (){
+    public double computeAreaRounded(){
         double area = 4 * Math.PI * Math.pow( r , 2 );
         double areaRounded = Math.round(area);
     return areaRounded;
     }
 
-    public double computeVolume (){
+    public double computeVolumeRounded(){
         double volume = (4 * Math.PI * Math.pow( r , 3 ))/3;
         double volumeRounded = Math.round(volume);
         return volumeRounded;
