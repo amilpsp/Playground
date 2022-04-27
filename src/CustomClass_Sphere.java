@@ -2,13 +2,19 @@ public class CustomClass_Sphere {
     double r;
 
     //Constructor
-    public CustomClass_Sphere(double radius, double sphereArea, double sphereVolume){
+    public CustomClass_Sphere(double radius){
         r = radius;
-        a = sphereArea;
-        v = sphereVolume;
     }
 
-    public double computeArea (double radius){
+    public double computeArea (){
+        double area = 4 * Math.PI * Math.pow( r , 2 );
+        double areaRounded = Math.round(area);
+    return areaRounded;
+    }
 
-    return}
+    public double computeVolume (){
+        double volume = (4 * Math.PI * Math.pow( r , 3 ))/3;
+        double volumeRounded = Math.round(volume);
+        return volumeRounded;
+    }
 }

@@ -11,13 +11,11 @@ public class Playground_SphereAreaVolume {
         System.out.println("Bestäm värden av klotets radius: ");
         double r = rVarde.nextDouble();
 
-        double klotArea = 4 * Math.PI * Math.pow( r , 2 );
-        double klotVolym = (4 * Math.PI * Math.pow( r , 3 ) ) / 3;
+        CustomClass_Sphere globe = new CustomClass_Sphere(r);
+        int areaRounded = (int)globe.computeArea();
+        int volumeRounded = (int)globe.computeVolume();
 
-        int klotAreaRounded = (int)Math.round(klotArea);
-        int klotVolymRounded = (int)Math.round(klotVolym);
-
-        System.out.println("Arean av klotet är: " + klotAreaRounded );
-        System.out.println("Volymen av klotet är: " + klotVolymRounded );
+        System.out.println("klotets area är: " + areaRounded );
+        System.out.println("Klotets volym är: " + volumeRounded );
     }
 }
