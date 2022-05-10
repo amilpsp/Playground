@@ -16,7 +16,7 @@ public class MultiplicationPyramid {
         }
 
         Scanner scanMultiplyUpTo = new Scanner(System.in);
-        char yesNoAnswer = 'a';
+        char yesNoAnswer;
         boolean validInput = false;
 
         while (!validInput){
@@ -50,7 +50,7 @@ public class MultiplicationPyramid {
 
         while (!validInput){
             try{
-                System.out.print("Vilken antal rader vill du ha? ");
+                System.out.print("Which is the last number that you want to see squared? ");
                 multiplyUpTo = scanMultiplyUpTo.nextInt();
                 validInput = true;
             }
